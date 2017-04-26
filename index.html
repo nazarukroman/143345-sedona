@@ -16,11 +16,6 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
-          </ul>
-          <div class="index-logo">
-            <img src="img/logo.png" width="138" height="70" alt="Логотип">
-          </div>
-          <ul>
             <li>
               <a href="#">Карта штата</a>
             </li>
@@ -29,37 +24,45 @@
             </li>
           </ul>
         </nav>
+        <div class="index-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип">
+        </div>
       </div>
     </header>
     <main class="container">
-      <div class="main-logo">
-
+      <div class="top-background">
       </div>
-      <h1 class="main-title">
-        СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
-      </h1>
-      <span class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+      <div class="headline">
+        <h1 class="main-title">
+          СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <section class="main-content-top">
         <div class="sidebar-left">
           <span class="sidebar-name">Настоящий городок</span>
-          <p>
-            —№1—<br>
+          <span class="sidebar-subtitle">
+            —№1—
+          </span>
+          <p class="sidebar-text">
             СЕДОНА — не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
         <div class="sidebar-right">
 
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Жилье</b>
+      </section>
+      <section class="first-benefits">
+        <div class="first-benefits-item">
+          <b class="first-benefits-name">Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Еда</b>
+        <div class="first-benefits-item">
+          <b class="first-benefits-name">Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Сувениры</b>
+        <div class="first-benefits-item">
+          <b class="first-benefits-name">Сувениры</b>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
@@ -69,29 +72,39 @@
         </div>
         <div class="sidebar-right">
           <span class="sidebar-name">Там есть мост дьявола</span>
-          <p>
-            —№2—<br>
+          <span class="sidebar-subtitle">
+            —№2—
+          </span>
+          <p class="sidebar-text">
             Да, по нему можно пройти! Если конечно вы осмелитесь
           </p>
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Небольшая площадь</b>
-          <p>
-            —№3—<br>
+      </section>
+      <section class="second-benefits">
+        <div class="second-benefits-item">
+          <b class="second-benefits-name">Небольшая площадь</b>
+          <span class="second-benefits-subtitle">
+            —№3—
+          </span>
+          <p class="second-benefits-text">
             ВСЕ достопримечательности находятся очень близко
           </p>
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Красивая дорога</b>
-          <p>
-            —№4—<br>
+        <div class="second-benefits-item">
+          <b class="second-benefits-item">Красивая дорога</b>
+          <span class="second-benefits-subtitle">
+            —№4—
+          </span>
+          <p class="second-benefits-text">
             Ехать в Седону из Лас-вегаса совсем не скучно!
           </p>
         </div>
-        <div class="sidebar-item">
-          <b class="sidebar-item-name">Мало туристов</b>
-          <p>
-            —№5—<br>
+        <div class="second-benefits-item">
+          <b class="second-benefits-name">Мало туристов</b>
+          <span class="second-benefits-subtitle">
+            —№5—
+          </span>
+          <p class="second-benefits-text">
             Большинство едет в гранд каньон и толпится там
           </p>
         </div>
@@ -99,20 +112,28 @@
       <section class="main-content-bottom">
         <span class="bottom-title">Заинтересовались?</span>
         <p class="bottom-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <form action="#" method="get">
-          <div class="form-headline">
-            <a href="#">Поиск гостиницы в Седоне</a>
-          </div>
-          <label for="arrival-field">Дата заезда:</label>
-          <input type="date" name="arrival" id="arrival-field">
-          <label for="departure-field">Дата отъезда:</label>
-          <input type="date" name="departure" id="departure-field">
-          <label for="adults-field">Взрослые:</label>
-          <input type="number" name="adults" id="adults-field">
-          <label for="childs-field">Дети:</label>
-          <input type="number" name="childs" id="childs-field">
-          <a class="search-btn" href="#">Найти</a>
-        </form>
+        <div class="form-headline">
+          <a href="#">Поиск гостиницы в Седоне</a>
+        </div>
+        <div class="search-form">
+          <form action="#" method="get">
+            <div class="form-line">
+              <label for="arrival-field">Дата заезда:</label>
+              <input type="date" name="arrival" id="arrival-field">
+            </div>
+            <div class="form-line">
+              <label for="departure-field">Дата отъезда:</label>
+              <input type="date" name="departure" id="departure-field">
+            </div>
+            <div class="form-tourists">
+              <label for="adults-field">Взрослые:</label>
+              <input type="number" name="adults" id="adults-field">
+              <label for="childs-field">Дети:</label>
+              <input type="number" name="childs" id="childs-field">
+            </div>
+            <button class="show-results" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
       <div class="map"></div>
     </main>

@@ -1,6 +1,8 @@
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
+  color: #000000;
 }
 h1 {
   font-size: 21px;
