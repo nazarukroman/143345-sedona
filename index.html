@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <div class="container">
         <nav class="main-navigation">
           <ul>
@@ -30,8 +31,7 @@
       </div>
     </header>
     <main class="container">
-      <div class="top-background">
-      </div>
+      <div class="top-background"></div>
       <div class="headline">
         <h1 class="main-title">
           СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
@@ -48,28 +48,27 @@
             СЕДОНА — не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
-        <div class="sidebar-right">
-
-        </div>
+        <div class="sidebar-right"></div>
       </section>
       <section class="first-benefits">
         <div class="first-benefits-item">
-          <b class="first-benefits-name">Жилье</b>
+          <div class="first-benefits-house"></div>
+          <b class="first-benefits-housename">Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="first-benefits-item">
-          <b class="first-benefits-name">Еда</b>
+          <div class="first-benefits-food"></div>
+          <b class="first-benefits-foodname">Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="first-benefits-item">
-          <b class="first-benefits-name">Сувениры</b>
+          <div class="first-benefits-gifts"></div>
+          <b class="first-benefits-giftsname">Сувениры</b>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
       <section class="main-content-middle">
-        <div class="sidebar-right">
-
-        </div>
+        <div class="sidebar-left"></div>
         <div class="sidebar-right">
           <span class="sidebar-name">Там есть мост дьявола</span>
           <span class="sidebar-subtitle">
@@ -91,7 +90,7 @@
           </p>
         </div>
         <div class="second-benefits-item">
-          <b class="second-benefits-item">Красивая дорога</b>
+          <b class="second-benefits-name">Красивая дорога</b>
           <span class="second-benefits-subtitle">
             —№4—
           </span>
@@ -109,9 +108,11 @@
           </p>
         </div>
       </section>
-      <section class="main-content-bottom">
+      <section class="interest-block">
         <span class="bottom-title">Заинтересовались?</span>
         <p class="bottom-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </section>
+      <section class="search-content-bottom">
         <div class="form-headline">
           <a href="#">Поиск гостиницы в Седоне</a>
         </div>
@@ -135,7 +136,9 @@
           </form>
         </div>
       </section>
-      <div class="map"></div>
+      <div class="map-position">
+        <div class="map"></div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -143,9 +146,11 @@
           <a href="#">#visitsedona</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+          <div class="footer-btn-position">
+            <a class="social-btn social-btn-twit" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+          </div>
         </section>
         <section class="footer-copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/copyright.png" width="195" height="39" alt="Копирайт"></a>

@@ -33,7 +33,7 @@
     </header>
     <main class="container">
       <form class="search-block">
-        <fieldset>
+        <fieldset class="search-column">
           <legend>Инфраструктура:</legend>
           <input type="checkbox" name="swimmingpool" id="swimmingpool-field">
           <label for="swimmingpool-field">Бассейн</label>
@@ -42,7 +42,7 @@
           <input type="checkbox" name="wifi" id="wifi-field">
           <label for="wifi-field">Wi-fi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="search-column">
           <legend>Тип жилья:</legend>
           <input type="checkbox" name="hotel" id="hotel-field">
           <label for="hotel-field">Гостиница</label>
@@ -51,17 +51,17 @@
           <input type="checkbox" name="apart" id="apart-field">
           <label for="apart-field">Аппартаменты</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="search-column-range">
           <legend>Стоимость в сутки(Р):</legend>
           <div class="price-filter">
             <input type="text" value="От 0" name="start-price" id="start-price-field">
             <input type="text" value="До 3000" name="final-price" id="final-price-field">
           </div>
-          <div class="price-range">
-
-          </div>
+          <div class="price-range"></div>
         </fieldset>
-        <button class="show-results" type="submit">Показать</button>
+        <div class="btn-position">
+          <button class="show-results" type="submit">Показать</button>
+        </div>
       </form>
       <section class="filter-results">
         <div class="results-preview">
@@ -129,15 +129,17 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer-in">
       <div class="container">
         <section class="footer-contact">
           <a href="#">#visitsedona</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+          <div class="footer-btn-position">
+            <a class="social-btn social-btn-twit" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+          </div>
         </section>
         <section class="footer-copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/copyright.png" width="195" height="39" alt="Копирайт"></a>
