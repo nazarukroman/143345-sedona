@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -12,16 +13,16 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a class="main-navigation-active" href="#">Информация</a>
             </li>
             <li>
-              <a href="#">Фото и видео</a>
+              <a class="main-navigation-active" href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="#">Карта штата</a>
+              <a class="main-navigation-active" href="#">Карта штата</a>
             </li>
             <li>
-              <a href="./inner.html">Гостиницы</a>
+              <a class="main-navigation-active" href="./inner.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +39,7 @@
         </h1>
         <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <section class="main-content-top">
+      <section class="main-content-top clearfix">
         <div class="sidebar-left">
           <span class="sidebar-name">Настоящий городок</span>
           <span class="sidebar-subtitle">
@@ -50,27 +51,27 @@
         </div>
         <div class="sidebar-right"></div>
       </section>
-      <section class="first-benefits">
+      <section class="first-benefits clearfix">
         <div class="first-benefits-item">
           <div class="first-benefits-house"></div>
           <b class="first-benefits-housename">Жилье</b>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="first-benefits-housetext">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="first-benefits-item">
           <div class="first-benefits-food"></div>
           <b class="first-benefits-foodname">Еда</b>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="first-benefits-foodtext">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="first-benefits-item">
           <div class="first-benefits-gifts"></div>
           <b class="first-benefits-giftsname">Сувениры</b>
-          <p>Не только китайского, но и местного производства!</p>
+          <p class="first-benefits-giftstext">Не только китайского, но и местного производства!</p>
         </div>
       </section>
       <section class="main-content-middle">
         <div class="sidebar-left"></div>
         <div class="sidebar-right">
-          <span class="sidebar-name">Там есть мост дьявола</span>
+          <span class="sidebar-name">Там есть<br> мост дьявола</span>
           <span class="sidebar-subtitle">
             —№2—
           </span>
@@ -79,13 +80,13 @@
           </p>
         </div>
       </section>
-      <section class="second-benefits">
+      <section class="second-benefits clearfix">
         <div class="second-benefits-item">
           <b class="second-benefits-name">Небольшая площадь</b>
           <span class="second-benefits-subtitle">
             —№3—
           </span>
-          <p class="second-benefits-text">
+          <p class="second-benefits-firsttext">
             ВСЕ достопримечательности находятся очень близко
           </p>
         </div>
@@ -94,7 +95,7 @@
           <span class="second-benefits-subtitle">
             —№4—
           </span>
-          <p class="second-benefits-text">
+          <p class="second-benefits-secondtext">
             Ехать в Седону из Лас-вегаса совсем не скучно!
           </p>
         </div>
@@ -103,57 +104,59 @@
           <span class="second-benefits-subtitle">
             —№5—
           </span>
-          <p class="second-benefits-text">
+          <p class="second-benefits-thirdtext">
             Большинство едет в гранд каньон и толпится там
           </p>
         </div>
       </section>
       <section class="interest-block">
         <span class="bottom-title">Заинтересовались?</span>
-        <p class="bottom-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="bottom-subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </section>
       <section class="search-content-bottom">
-        <div class="form-headline">
-          <a href="#">Поиск гостиницы в Седоне</a>
-        </div>
-        <div class="search-form">
-          <form action="#" method="get">
-            <div class="form-line">
-              <label for="arrival-field">Дата заезда:</label>
-              <input type="date" name="arrival" id="arrival-field">
-            </div>
-            <div class="form-line">
-              <label for="departure-field">Дата отъезда:</label>
-              <input type="date" name="departure" id="departure-field">
-            </div>
-            <div class="form-tourists">
-              <label for="adults-field">Взрослые:</label>
-              <input type="number" name="adults" id="adults-field">
-              <label for="childs-field">Дети:</label>
-              <input type="number" name="childs" id="childs-field">
-            </div>
-            <button class="show-results" type="submit">Найти</button>
-          </form>
+        <div class="content-bottom-position">
+          <div class="form-headline">
+            <a href="#">Поиск гостиницы в Седоне</a>
+          </div>
+          <div class="search-form clearfix">
+            <form action="#" method="get">
+              <div class="form-line">
+                <label for="arrival-field">Дата заезда:</label>
+                <input type="date" name="arrival" id="arrival-field">
+              </div>
+              <div class="form-line">
+                <label for="departure-field">Дата отъезда:</label>
+                <input type="date" name="departure" id="departure-field">
+              </div>
+              <div class="form-tourists">
+                <div class="adults-block clearfix">
+                  <label for="adults-field">Взрослые:</label>
+                  <input type="number" name="adults" id="adults-field" value="1">
+                </div>
+                <div class="children-block clearfix">
+                  <label for="childs-field">Дети:</label>
+                  <input type="number" name="childs" id="childs-field" value="1">
+                </div>
+              </div>
+              <button class="show-results" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
       </section>
-      <div class="map-position">
-        <div class="map"></div>
-      </div>
+      <div class="map"></div>
     </main>
-    <footer class="main-footer">
-      <div class="container">
+    <footer class="main-footer container">
+      <div class="container clearfix">
         <section class="footer-contact">
           <a href="#">#visitsedona</a>
         </section>
-        <section class="footer-social">
-          <div class="footer-btn-position">
-            <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
-          </div>
+        <section class="footer-social clearfix">
+          <a class="social-btn social-btn-twit" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
         </section>
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/copyright.png" width="195" height="39" alt="Копирайт"></a>
+          <a class="copyright-img" href="https://htmlacademy.ru/intensive/htmlcss"></a>
         </section>
       </div>
     </footer>
