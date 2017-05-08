@@ -959,22 +959,22 @@ img {
   width: 22px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox] + label::before {
+.type-checkbox input[type=checkbox] ~ label::before {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 }
-.type-checkbox input[type=checkbox]:disabled + label::before {
+.type-checkbox input[type=checkbox]:disabled ~ label::before {
   background-image: url('../img/empty-checkbox-disabled.png');
   width: 22px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox]:checked + label::before {
+.type-checkbox input[type=checkbox]:checked ~ label::before {
   background-image: url('../img/check-mark.png');
   width: 26px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox]:checked:disabled + label::before {
+.type-checkbox input[type=checkbox]:checked:disabled ~ label::before {
   background-image: url('../img/check-mark-disabled.png');
   width: 26px;
   height: 22px;
