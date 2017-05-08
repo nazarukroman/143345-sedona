@@ -599,6 +599,8 @@ img {
 
   cursor: pointer;
 
+  font-size: 0;
+
   background-image: url('../img/calendar.png');
   width: 21px;
   height: 22px;
@@ -859,6 +861,9 @@ img {
   float: left;
   width: 33.33333%;
   height: 39px;
+}
+.footer-copyright a {
+  font-size: 0;
 }
 .copyright-img {
   position: absolute;
@@ -1178,6 +1183,8 @@ img {
 
   top: 39px;
   right: 75px;
+
+  font-size: 0;
 }
 .arrows-block .arrow-up {
   float: left;
