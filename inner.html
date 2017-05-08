@@ -70,12 +70,14 @@
             <div class="search-column-range">
               <div class="range-title">Стоимость в сутки(Р):</div>
               <div class="price-filter">
-                <label class="min-price">от
-                  <input type="text" value="0" name="start-price" id="start-price-field">
-                </label>
-                <label class="max-price">до
-                  <input type="text" value="3000" name="final-price" id="final-price-field">
-                </label>
+                <div class="min-price">
+                  <input type="text" name="start-price" id="start-price-field">
+                  <label for="start-price-field">от 0</label>
+                </div>
+                <div class="max-price">
+                  <input type="text" name="final-price" id="final-price-field">
+                  <label for="final-price-field">до 3000</label>
+                </div>
               </div>
               <div class="price-range">
                 <div class="scale">
