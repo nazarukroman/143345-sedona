@@ -13,14 +13,14 @@ search.addEventListener('click', function(evt) {
 }
 })
 
-var countButton = document.querySelector('.count-button');
-var buttonValue = document.querySelector('.form-tourists input');
-
-countButton.addEventListener('click', function(chg) {
-  for (i = buttonValue; i < 100; i++) {
-    buttonValue.value = 'i';
-  }
-})
+// var countButton = document.querySelector('.count-button');
+// var buttonValue = document.querySelector('.form-tourists input');
+//
+// countButton.addEventListener('click', function(chg) {
+//   for (i = buttonValue; i < 100; i++) {
+//     buttonValue.value = 'i';
+//   }
+// })
 
 /*  Левый ползунок фильтра "Стоимость в сутки (Р)" */
 
