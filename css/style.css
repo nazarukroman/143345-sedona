@@ -928,7 +928,10 @@ img {
   padding: 0;
 }
 .type-checkbox li {
-  margin-bottom: 25px;
+  padding-bottom: 2px;
+  padding-left: 40px;
+
+  margin-bottom: 22px;
 }
 .type-checkbox li:last-child {
   margin-bottom: 0;
@@ -937,34 +940,41 @@ img {
   display: none;
 }
 .type-checkbox label {
-  background-image: url('../img/empty-checkbox.png');
-  width: 22px;
-  height: 22px;
+  position: relative;
+  cursor: pointer;
+
+  display: inline-block;
+  vertical-align: top;
 
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 40px;
 }
-.type-checkbox input[type=checkbox] + label {
+.type-checkbox label::before {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: '';
+  background-image: url('../img/empty-checkbox.png');
+  width: 22px;
+  height: 22px;
+}
+.type-checkbox input[type=checkbox] + label::before {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 }
-.type-checkbox input[type=checkbox]:disabled + label {
+.type-checkbox input[type=checkbox]:disabled + label::before {
   background-image: url('../img/empty-checkbox-disabled.png');
   width: 22px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox]:checked + label {
+.type-checkbox input[type=checkbox]:checked + label::before {
   background-image: url('../img/check-mark.png');
   width: 26px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox]:checked:disabled + label {
+.type-checkbox input[type=checkbox]:checked:disabled + label::before {
   background-image: url('../img/check-mark-disabled.png');
   width: 26px;
   height: 22px;
