@@ -24,7 +24,20 @@ img {
   display: table;
   clear: both;
 }
+.visibility-hidden {
+  /*border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);*/
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
 .main-header {
+  position: relative;
   color: #000000;
 
   background-color: #ffffff;
@@ -95,6 +108,7 @@ img {
 }
 .top-background {
   background-image: url('../img/main-background.jpg');
+  background-repeat: no-repeat;
   background-color: #eeeeee;
   width: 100%;
   height: 508px;
@@ -195,6 +209,7 @@ img {
   float: right;
 
   background-image: url('../img/realtown.jpg');
+  background-repeat: no-repeat;
   width: 66%;
   height: 256px;
 }
@@ -237,6 +252,7 @@ img {
 }
 .first-benefits-house {
   background-image: url('../img/accomodation.png');
+  background-repeat: no-repeat;
   width: 75px;
   height: 72px;
 
@@ -247,6 +263,7 @@ img {
 }
 .first-benefits-food {
   background-image: url('../img/food.png');
+  background-repeat: no-repeat;
   width: 74px;
   height: 70px;
 
@@ -257,6 +274,7 @@ img {
 }
 .first-benefits-gifts {
   background-image: url('../img/gift.png');
+  background-repeat: no-repeat;
   width: 64px;
   height: 76px;
 
@@ -305,6 +323,7 @@ img {
   float: left;
 
   background-image: url('../img/devil.jpg');
+  background-repeat: no-repeat;
   background-color: #eeeeee;
   width: 66%;
   height: 256px;
@@ -531,13 +550,18 @@ img {
   z-index: 0;
   -webkit-animation-name: show-form;
           animation-name: show-form;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .search-form-hide {
-  display: none;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 .form-line {
   position: relative;
@@ -599,19 +623,24 @@ img {
 
   cursor: pointer;
 
-  font-size: 0;
 
-  background-image: url('../img/calendar.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -5px -5px;
   width: 21px;
   height: 22px;
 }
 .form-line-calendar:hover {
-  background-image: url('../img/calendar-hover.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -67px -5px;
   width: 21px;
   height: 22px;
 }
 .form-line-calendar:active {
-  background-image: url('../img/calendar-active.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -36px -5px;
   width: 21px;
   height: 22px;
 }
@@ -645,6 +674,8 @@ img {
   padding-left: 50px;
 }
 .form-tourists-count input {
+  position: relative;
+  z-index: 0;
   float: left;
 
   width: 35px;
@@ -667,6 +698,8 @@ img {
   outline: none;
 }
 .count-button {
+  position: relative;
+  z-index: 1;
   float: left;
 
   width: 38px;
@@ -689,9 +722,6 @@ img {
 }
 .count-button:active {
   color: #81b3d2;
-}
-.count-button:focus {
-  outline: none;
 }
 .show-results {
   width: 100%;
@@ -721,14 +751,12 @@ img {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-.show-results:focus {
-  outline: none;
-}
 .map {
   background-color: #eeeeee;
   width: 1200px;
   height: 593px;
   background-image: url('../img/map.png');
+  background-repeat: no-repeat;
 }
 .main-footer {
   position: relative;
@@ -784,9 +812,9 @@ img {
 
           transform: translate(-50%, -50%);
 
-  background-image: url('../img/twit.png');
+  background-image: url('../img/sprite.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -281px -5px;
   width: 17px;
   height: 15px;
 }
@@ -803,9 +831,9 @@ img {
 
           transform: translate(-50%, -50%);
 
-  background-image: url('../img/facebook.png');
+  background-image: url('../img/sprite.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -234px -5px;
   width: 10px;
   height: 19px;
 }
@@ -822,9 +850,9 @@ img {
 
           transform: translate(-50%, -50%);
 
-  background-image: url('../img/youtube.png');
+  background-image: url('../img/sprite.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -308px -5px;
   width: 20px;
   height: 16px;
 }
@@ -836,8 +864,6 @@ img {
 
   display: inline-block;
   vertical-align: top;
-
-  font-size: 0;
 
   width: 46px;
   height: 48px;
@@ -862,9 +888,6 @@ img {
   width: 33.33333%;
   height: 39px;
 }
-.footer-copyright a {
-  font-size: 0;
-}
 .copyright-img {
   position: absolute;
   top: 50%;
@@ -875,16 +898,19 @@ img {
           transform: translate(-50%, -36%);
 
   background-image: url('../img/copyright.png');
+  background-repeat: no-repeat;
   width: 195px;
   height: 39px;
 }
 .copyright-img:hover {
   background-image: url(../img/copyright-hover.png);
+  background-repeat: no-repeat;
   width: 195px;
   height: 39px;
 }
 .copyright-img:active {
   background-image: url(../img/copyright-active.png);
+  background-repeat: no-repeat;
   width: 195px;
   height: 39px;
 }
@@ -937,7 +963,15 @@ img {
   margin-bottom: 0;
 }
 .type-checkbox input[type="checkbox"] {
-  display: none;
+  border: 0;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 .type-checkbox label {
   position: relative;
@@ -955,26 +989,33 @@ img {
   top: 0;
   left: -40px;
   content: '';
-  background-image: url('../img/empty-checkbox.png');
+
+}
+.type-checkbox input[type=checkbox] ~ label::before {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -170px -5px;
   width: 22px;
   height: 22px;
 }
-.type-checkbox input[type=checkbox] ~ label::before {
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 .type-checkbox input[type=checkbox]:disabled ~ label::before {
-  background-image: url('../img/empty-checkbox-disabled.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -202px -5px;
   width: 22px;
   height: 22px;
 }
 .type-checkbox input[type=checkbox]:checked ~ label::before {
-  background-image: url('../img/check-mark.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -98px -5px;
   width: 26px;
   height: 22px;
 }
 .type-checkbox input[type=checkbox]:checked:disabled ~ label::before {
-  background-image: url('../img/check-mark-disabled.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -134px -5px;
   width: 26px;
   height: 22px;
 }
@@ -1039,14 +1080,12 @@ img {
 
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 24px;
-  padding-right: 10px;
 }
 .min-price input,
 .max-price input {
   position: absolute;
 
-  width: 40%;
+  width: 100%;
   color: inherit;
   font: inherit;
   text-align: center;
@@ -1054,12 +1093,7 @@ img {
 
   background: none;
   border: none;
-}
-.min-price input {
-  left: 50px;
-}
-.max-price input {
-  right: 44px;
+  cursor: pointer;
 }
 .min-price label,
 .max-price label {
@@ -1070,9 +1104,18 @@ img {
   padding-top: 2px;
   padding-bottom: 2px;
 }
+.min-price input:focus,
+.max-price input:focus {
+  outline: none;
+}
 .min-price input:focus ~ label,
 .max-price input:focus ~ label {
-  font-size: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 .min-price label {
   left: 64px;
@@ -1148,6 +1191,9 @@ img {
   background-color: #ffffff;
   color: #000000;
 }
+.show-hotels:focus {
+  outline: auto;
+}
 .filter-results {
   width: 100%;
   max-width: 1200px;
@@ -1212,8 +1258,6 @@ img {
 
   top: 39px;
   right: 75px;
-
-  font-size: 0;
 }
 .arrows-block .arrow-up {
   float: left;
@@ -1406,7 +1450,9 @@ img {
 .hotel-rating-stars .star {
   float: left;
 
-  background-image: url('../img/star.png');
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -254px -5px;
   width: 17px;
   height: 17px;
 

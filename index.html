@@ -115,38 +115,38 @@
             <a href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
-        <section class="search-popup">
+        <section class="search-popup" id="popup">
             <div class="search-form">
               <form action="#" method="get">
                 <div class="form-line">
                   <label for="arrival-field">Дата заезда:</label>
                   <input type="text" name="arrival" id="arrival-field">
-                  <span class="form-line-calendar">Календарь</span>
+                  <span class="form-line-calendar"><span class="visibility-hidden">Календарь</span></span>
                 </div>
                 <div class="form-line">
                   <label for="departure-field">Дата выезда:</label>
                   <input type="text" name="departure" id="departure-field">
-                  <span class="form-line-calendar">Календарь</span>
+                  <span class="form-line-calendar"><span class="visibility-hidden">Календарь</span></span>
                 </div>
                 <div class="form-tourists">
-                  <label for="adults-field">Взрослые:</label>
-                  <div class="form-tourists-count adults-count">
-                    <button class="count-button" type="button">–</button>
-                    <input type="text" name="adults" id="adults-field" value="1">
-                    <button class="count-button" type="button">+</button>
+                  <label for="count-field">Взрослые:</label>
+                  <div class="form-tourists-count adults-count" id="count">
+                    <button class="count-button" type="button" id="bMinus">–</button>
+                    <input type="text" name="adults" id="count-field" value="0">
+                    <button class="count-button" type="button" id="bPlus">+</button>
                   </div>
                 </div>
                 <div class="form-tourists child-field">
-                  <label for="child-field">Дети:</label>
-                  <div class="form-tourists-count">
-                    <button class="count-button" type="button">–</button>
-                    <input type="text" name="child" id="child-field" value="1">
-                    <button class="count-button" type="button">+</button>
+                  <label for="second-count-field">Дети:</label>
+                  <div class="form-tourists-count" id="second-count">
+                    <button class="count-button" type="button" id="second-bMinus">–</button>
+                    <input type="text" name="child" id="second-count-field" value="0">
+                    <button class="count-button" type="button" id="second-bPlus">+</button>
                   </div>
                 </div>
                 <button class="show-results" type="submit">Найти</button>
               </form>
-          </div>
+            </div>
         </section>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629120.6712835223!2d-111.75599495157871!3d34.50387157533339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494096226849" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -158,12 +158,12 @@
             <a href="#">#visitsedona</a>
           </section>
           <section class="footer-social clearfix">
-            <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+            <a class="social-btn social-btn-twit" href="#"><span class="visibility-hidden">Твиттер</span></a>
+            <a class="social-btn social-btn-fb" href="#"><span class="visibility-hidden">Фейсбук</span></a>
+            <a class="social-btn social-btn-youtube" href="#"><span class="visibility-hidden">Ютуб</span></a>
           </section>
           <section class="footer-copyright">
-            <a class="copyright-img" href="https://htmlacademy.ru/intensive/htmlcss">Логотип Академии</a>
+            <a class="copyright-img" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visibility-hidden">Логотип Академии</span></a>
           </section>
         </div>
       </footer>
