@@ -53,9 +53,9 @@ img {
   width: 1200px;
   margin: 0 auto;
 
-  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
-          box-shadow: 0 0 5px rgba(0,0,0,0.3);
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .main-navigation ul {
   padding: 0 6%;
